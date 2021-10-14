@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+    margin: 0 auto;
 }
 *,
 *::before,
@@ -14,14 +15,12 @@ body {
     background-color: #fff;
 	color: #000;
     max-width: 600px;
-    margin: 20px;
+    margin: 0 auto;
 }
 
 img.logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0;
+    margin: 0 auto;
 }
 
 ul {
@@ -129,7 +128,7 @@ ul {
 
 .benefits,
 .news {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .benefits-list__item  {
