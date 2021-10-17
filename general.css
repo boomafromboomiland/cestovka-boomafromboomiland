@@ -1,3 +1,6 @@
+@import url('offers.css');
+@import url('benefits_articles.css');
+
 html {
 	box-sizing: border-box;
     margin: 20px;
