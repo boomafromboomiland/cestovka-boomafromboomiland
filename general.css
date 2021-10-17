@@ -3,7 +3,7 @@
 
 html {
 	box-sizing: border-box;
-    margin: 20px;
+    margin: 0 auto;
 }
 *,
 *::before,
@@ -19,6 +19,10 @@ body {
 	color: #000;
     max-width: 500px;
     margin: 0 auto;
+}
+
+header {
+    padding-left: 0;
 }
 
 img.logo {
@@ -66,7 +70,7 @@ ul {
         max-width: 900px;
     }
     header {
-        margin: 20px;
+        margin: 0 0 20px 20px;
         display: grid;
         grid-template-columns: 2fr 1fr;
         align-items: center;
@@ -92,5 +96,9 @@ ul {
         grid-template-columns: 2fr 1fr;
         align-items: center;
         margin: 0;
+    }
+    .nav {
+        display: grid;
+        justify-content: end;
     }
 }
