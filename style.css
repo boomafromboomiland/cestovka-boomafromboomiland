@@ -1,0 +1,317 @@
+html {
+	box-sizing: border-box;
+    margin: 20px;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* ---------MOBILE max.width 500px--------- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+	color: #000;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+img.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    color: #F03000;
+    justify-content: center;    
+}
+
+.nav__item,
+.nav__item--last {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav__item--last {
+    color: #fff;
+    background-color: #F03000;
+}
+
+.offers-image--1,
+.last-minute-image--1 {
+    background-image: url("podklady/palmy.jpg");
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 2 / 1;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-top-left-radius: 4px;
+}
+
+.offers__h2,
+.last-minute-offer__h2 {
+    color: #fff;
+    background-color: #F03000;
+    position: absolute;
+    left: 1em;
+    padding: 0.2em 0.5em;
+}
+
+.offers__heading--bigger,
+.last-minute-offer__heading--bigger {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 40px;
+}
+
+.offers__p--bigger,
+.last-minute-offer__p--bigger {
+    position: absolute;
+    bottom: 0.3rem;
+    left: 1rem;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.offers-image--2 {
+    background-image: url("podklady/jezero.jpg");
+    margin-bottom: 20px;
+}
+
+.offers-image--3 {
+    background-image: url("podklady/nakole.jpg");
+    margin-bottom: 40px; 
+}
+
+.offers-image--2,
+.offers-image--3,
+.last-minute-image--2,
+.last-minute-image--3 {
+    background-position: center;   
+    background-size: cover;
+    aspect-ratio: 3 / 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+}
+
+.offers__heading,
+.last-minute-offer__heading {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+.benefits,
+.news {
+    padding-bottom: 10px;
+}
+
+.benefits-list__item  {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.benefits-box {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.benefits-image {
+    margin: 20px 30px 20px 10px;
+}
+
+.benefits-list,
+.news-list {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 10px;
+}
+
+.benefits-list__item,
+.news-list__item {
+    background-color: #f5f4f4;
+    padding: 20px;
+}
+
+.last-minute-image--2 {
+    background-image: url("podklady/podkova.jpg");
+    margin-bottom: 20px;
+}
+
+.last-minute-image--3 {
+    background-image: url("podklady/zatoka.jpg");
+    margin-bottom: 40px; 
+}
+
+.last-minute__offer__h,
+.news-heading {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.benefits__h3,
+.news__title {
+    color: #F03000;
+    margin: 10px 0 0 0;}
+
+.news__p {
+    font-weight: bold;
+}
+
+.footer__heading {
+    color: #fff;
+    background: #262626;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+/* ---------Tablet max.width 900px--------- */
+@media (min-width: 501px) {   
+    body {
+        max-width: 900px;
+    }
+    header {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+    .nav__item,
+    .nav__item--last {
+        padding: 10px;
+    }
+
+    img.logo {
+        margin: 0 100px 0 10px;
+    }
+    .offers__block,
+    .last-minute__block {
+        display: flex;
+        flex-direction: line;
+        width: 100%;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .offers-image--2,
+    .offers-image--3,
+    .last-minute-image--2,
+    .last-minute-image--3 {
+        width: 50%;
+        aspect-ratio: 2 / 1;
+    }
+    .offers-image--2,
+    .offers-image--3,
+    .last-minute-image--2,
+    .last-minute-image--3 {
+        margin: 0;
+    }
+    .last-minute-offer__heading,
+    .offers__heading {
+        font-size: 1em;
+    }
+    .offers__heading--bigger,
+    .last-minute-offer__heading--bigger {
+    font-size: 2em;
+    }
+
+    .offers__p--bigger,
+    .last-minute-offer__p--bigger {
+    font-size: 1.3em;
+    }
+    .benefits-list {
+        grid-template-rows: 2;
+        grid-template-columns: 1fr 1fr;
+    }
+    .benefits-list__item  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* ---------DESKTOP min.width 901px--------- */
+@media (min-width: 901px) {
+    body {
+        max-width: 1200px;
+    } 
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        margin: 0;
+    }
+    .offers-image,
+    .last-minute-offer-image {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    .offers-image--1,
+    .last-minute-image--1 {
+        margin-bottom: 0;
+        border-top-left-radius: 0px;
+    }
+    .offers__block,
+    .last-minute__block {
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-rows: auto;
+        width: 100%;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .offers-image--2,
+    .offers-image--3,
+    .last-minute-image--2,
+    .last-minute-image--3 {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+    }
+    .last-minute-offer__heading,
+    .offers__heading {
+        font-size: 1.2em;
+    }
+    .offers__heading--bigger,
+    .last-minute-offer__heading--bigger {
+    font-size: 2.2em;
+    }
+
+    .offers__p--bigger,
+    .last-minute-offer__p--bigger {
+    font-size: 1.3em;
+    }
+    .benefits-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .news-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
