@@ -1,0 +1,86 @@
+/* ---------MOBILE max.width 500px--------- */
+
+.benefits,
+.news {
+    padding-bottom: 10px;
+}
+
+.benefits-list__item  {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.benefits-box {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.benefits-image {
+    margin: 20px 30px 20px 10px;
+}
+
+.benefits-list,
+.news-list {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 10px;
+}
+
+.benefits-list__item,
+.news-list__item {
+    background-color: #f5f4f4;
+    padding: 20px;
+}
+
+.last-minute-image--2 {
+    background-image: url("podklady/podkova.jpg");
+    margin-bottom: 20px;
+}
+
+.last-minute-image--3 {
+    background-image: url("podklady/zatoka.jpg");
+    margin-bottom: 40px; 
+}
+
+.last-minute__offer__h,
+.news-heading {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.benefits__h3,
+.news__title {
+    color: #F03000;
+    margin: 10px 0 0 0;}
+
+.news__p {
+    font-weight: bold;
+}
+
+/* ---------Tablet max.width 900px--------- */
+
+@media (min-width: 501px) {   
+    .benefits-list {
+        grid-template-rows: 2;
+        grid-template-columns: 1fr 1fr;
+    }
+    .benefits-list__item  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* ---------DESKTOP min.width 901px--------- */
+
+@media (min-width: 901px) {
+    .benefits-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .news-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
